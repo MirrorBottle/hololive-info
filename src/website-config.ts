@@ -49,12 +49,12 @@ export interface WebsiteConfig {
 }
 
 const config: WebsiteConfig = {
-  title: 'ImaginSketch',
-  description: 'Di tempat ini aku menaruh coretan dari berbagai kisah. Tempat berkumpulnya kisah.',
+  title: 'Hololive-info',
+  description: 'All you can get info about your beloved hololive, simps!',
   coverImage: 'img/blog-cover.png',
   logo: 'img/ghost-logo.png',
   lang: 'en',
-  siteUrl: 'https://imagin-sketch.netlify.app',
+  siteUrl: 'https://hololive-info.netlify.app',
   facebook: 'https://www.facebook.com/MirrorBottle',
   twitter: 'https://twitter.com/MirrorBottle',
   showSubscribe: false,
