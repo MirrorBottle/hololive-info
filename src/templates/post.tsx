@@ -122,7 +122,7 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
   // 20 AUG 2018
   const displayDatetime = format(date, 'dd LLL yyyy');
   const disqusConfig = {
-      shortname: "imagin-sketch",
+      shortname: "hololive-info",
       config: { identifier: location.pathname },
   }
   return (
