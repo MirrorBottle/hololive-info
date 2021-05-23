@@ -1,6 +1,6 @@
 ---
 title: 'Duke of Akashic - Record II'
-author: [Bayu Setiawan]
+author: [Fadhil Dhanendra]
 tags: ['Duke of Akashic']
 image: ../../img/stories/duke-of-akashic/duke-of-akashic-two.jpg
 date: '2020-12-18'
