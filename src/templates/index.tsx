@@ -95,13 +95,13 @@ const IndexPage: React.FC<IndexProps> = props => {
       </Helmet>
       <Wrapper>
         <div
-          css={[outer, SiteHeader, SiteHeaderStyles]}
+          css={[SiteHeader, SiteHeaderStyles]}
           className="site-header-background"
           style={{
             backgroundImage: `url('${props.data.header.childImageSharp.fixed.src}')`,
           }}
         >
-          <div css={inner}>
+          <div>
             <SiteNav isHome />
             <SiteHeaderContent className="site-header-conent">
               <SiteTitle className="site-title">

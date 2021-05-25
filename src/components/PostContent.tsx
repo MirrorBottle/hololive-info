@@ -34,12 +34,12 @@ export const PostFullContent = styled.section`
   margin: 0 auto;
   padding: 0 170px 6vw;
   min-height: 230px;
-  font-family: Georgia, serif;
+  font-family: 'Lato', serif;
   font-size: 2rem;
   line-height: 1.6em;
-  background: #fff;
+  background: ${colors.holoBlack};
   margin-top: 3rem;
-
+  color: ${colors.holoBlack}!important;
   @media (max-width: 1170px) {
     padding: 0 11vw;
   }
@@ -100,10 +100,10 @@ export const PostFullContent = styled.section`
 
   a {
     /* color: var(--darkgrey); */
-    color: ${colors.darkgrey};
+    color: ${colors.holoMain};
     word-break: break-word;
-    /* box-shadow: var(--darkgrey) 0 -1px 0 inset; */
-    box-shadow: ${colors.darkgrey} 0 -1px 0 inset;
+    /* box-shadow: var(--holoMain) 0 -1px 0 inset; */
+    box-shadow: ${colors.holoMain} 0 -1px 0 inset;
     transition: all 0.2s ease-in-out;
   }
 
@@ -118,7 +118,7 @@ export const PostFullContent = styled.section`
   strong,
   em {
     /* color: color(var(--darkgrey) l(-5%)); */
-    color: ${lighten('-0.05', colors.darkgrey)};
+    color: ${lighten('-0.05', colors.holoMain)};
   }
 
   small {
@@ -244,7 +244,7 @@ export const PostFullContent = styled.section`
     height: 30px;
     /* background: color(var(--lightgrey) l(+10%)); */
     background: ${lighten('0.1', colors.lightgrey)};
-    box-shadow: #fff 0 0 0 5px;
+    box-shadow: ${colors.holoBlack} 0 0 0 5px;
     transform: rotate(45deg);
   }
 
@@ -340,7 +340,7 @@ export const PostFullContent = styled.section`
     border: 0;
     /* color: var(--blue); */
     color: ${colors.blue};
-    font-family: Georgia, serif;
+    font-family: 'Lato', serif;
     font-size: 3.2rem;
     line-height: 1.35em;
     text-align: center;
@@ -451,20 +451,20 @@ export const PostFullContent = styled.section`
     }
 
     a {
-      color: #fff;
-      box-shadow: inset 0 -1px 0 #fff;
+      color: ${colors.holoMain};
+      box-shadow: inset 0 -1px 0 ${colors.holoMain};
     }
 
     strong {
-      color: #fff;
+      color: ${colors.holoBlack};
     }
 
     em {
-      color: #fff;
+      color: ${colors.holoBlack};
     }
 
     code {
-      color: #fff;
+      color: ${colors.holoBlack};
       background: #000;
     }
 

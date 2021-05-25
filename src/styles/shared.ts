@@ -1,4 +1,4 @@
-import { lighten } from 'polished';
+import { darken, lighten } from 'polished';
 
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
@@ -24,7 +24,7 @@ export const SiteNavMain = css`
   left: 0;
   z-index: 1000;
   /* background: color(var(--darkgrey) l(-5%)); */
-  background: ${lighten('-0.05', colors.darkgrey)};
+  background: ${darken('0.15', colors.holoMain)};
 `;
 
 export const SiteMain = css`
@@ -72,7 +72,7 @@ export const PostFeed = css`
   flex-wrap: wrap;
   margin: 0 -20px;
   padding: 40px 0 0;
-  background: #fff;
+  background: ${colors.holoBackground};
 
   /* Special Template Styles */
   padding: 40px 0 5vw;

@@ -196,7 +196,7 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
               <PostFullHeader className="post-full-header">
                 <PostFullTags className="post-full-tags">
                   {post.frontmatter.tags && post.frontmatter.tags.length > 0 && post.frontmatter.tags.map(tag => (
-                    <Link style={{ color: colors.lightgrey }} to={`/tags/${_.kebabCase(tag)}/`}>
+                    <Link style={{ color: colors.holoMain }} to={`/tags/${_.kebabCase(tag)}/`}>
                       #{tag}&nbsp;
                     </Link>
                   ))}
@@ -326,7 +326,7 @@ const PostFullTags = styled.section`
   justify-content: flex-start;
   align-items: center;
   /* color: var(--midgrey); */
-  color: ${colors.midgrey};
+  color: ${colors.holoMain};
   font-size: 1.7rem;
   line-height: 1.4em;
   font-weight: 600;
@@ -335,7 +335,7 @@ const PostFullTags = styled.section`
 const PostFullCustomExcerpt = styled.p`
   margin: 20px 0 0;
   color: var(--midgrey);
-  font-family: Georgia, serif;
+  font-family: 'Lato', serif;
   font-size: 2.3rem;
   line-height: 1.4em;
   font-weight: 300;
@@ -357,7 +357,7 @@ const PostFullByline = styled.div`
   margin: 35px 0 0;
   padding-top: 15px;
   /* border-top: 1px solid color(var(--lightgrey) l(+10%)); */
-  border-top: 1px solid ${lighten('0.1', colors.lightgrey)};
+  border-top: 1px solid ${colors.holoMain};
 
   .post-full-byline-content {
     flex-grow: 1;
@@ -373,7 +373,7 @@ const PostFullByline = styled.div`
   .post-full-byline-meta {
     margin: 2px 0 0;
     /* color: color(var(--midgrey) l(+10%)); */
-    color: ${lighten('0.1', colors.midgrey)};
+    color: ${colors.holoMain};
     font-size: 1.2rem;
     line-height: 1.2em;
     letter-spacing: 0.2px;
@@ -389,12 +389,12 @@ const PostFullByline = styled.div`
 
   .post-full-byline-meta h4 a {
     /* color: color(var(--darkgrey) l(+10%)); */
-    color: ${lighten('0.1', colors.darkgrey)};
+    color: ${colors.holoMain};
   }
 
   .post-full-byline-meta h4 a:hover {
     /* color: var(--darkgrey); */
-    color: ${colors.darkgrey};
+    color: ${colors.holoMain};
   }
 
   .post-full-byline-meta .bull {
@@ -405,10 +405,10 @@ const PostFullByline = styled.div`
 
   @media (prefers-color-scheme: dark) {
     /* border-top-color: color(var(--darkmode) l(+15%)); */
-    border-top-color: ${lighten('0.15', colors.darkmode)};
+    border-top-color: ${colors.holoMain};
 
     .post-full-byline-meta h4 a {
-      color: rgba(255, 255, 255, 0.75);
+      color: ${colors.holoMain};
     }
 
     .post-full-byline-meta h4 a:hover {
@@ -419,14 +419,14 @@ const PostFullByline = styled.div`
 
 export const PostFullTitle = styled.h1`
   margin: 0 0 0.2em;
-  color: ${setLightness('0.05', colors.darkgrey)};
+  color: ${colors.holoBlack};
   @media (max-width: 500px) {
     margin-top: 0.2em;
     font-size: 3.3rem;
   }
 
   @media (prefers-color-scheme: dark) {
-    color: rgba(255, 255, 255, 0.9);
+    color: ${colors.holoBlack};
   }
 `;
 

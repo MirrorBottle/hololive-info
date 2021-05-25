@@ -92,11 +92,6 @@ const PostCardStyles = css`
   padding: 20px;
   min-height: 220px;
   background-size: cover;
-  transition: .3s;
-  :hover {
-    
-    box-shadow: 3px 3px 5px rgba(0,0,0,.3), -3px -3px 5px rgba(0,0,0,.3);
-  }
 `;
 
 const PostCardLarge = css`
@@ -172,6 +167,8 @@ const PostCardContent = styled.div`
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  background: #fff;
+  padding: 1rem;
 `;
 
 const PostCardContentLink = css`
@@ -188,7 +185,7 @@ const PostCardContentLink = css`
 const PostCardPrimaryTag = styled.div`
   margin: 0 0 0.2em;
   /* color: var(--blue); */
-  color: ${colors.whitegrey};
+  color: ${colors.holoBlue};
   font-size: 1.4rem;
   font-weight: 500;
   letter-spacing: 0.2px;
@@ -198,18 +195,19 @@ const PostCardTitle = styled.h2`
   margin: 0 0 0.4em;
   line-height: 1.15em;
   transition: color 0.2s ease-in-out;
+  color: ${colors.holoBlack}!important;
 
   @media (prefers-color-scheme: dark) {
-    color: rgba(255, 255, 255, 0.85);
+    color: ${colors.holoBlack}!important;
   }
 `;
 
 const PostCardExcerpt = styled.section`
-  font-family: Georgia, serif;
-
+  font-family: 'Lato', cursive, serif;
+  color: ${colors.holoBlack};
   @media (prefers-color-scheme: dark) {
     /* color: color(var(--midgrey) l(+10%)); */
-    color: ${lighten('0.1', colors.midgrey)} !important;
+    color: ${colors.holoBlack} !important;
   }
 `;
 
@@ -225,7 +223,7 @@ const PostCardBylineContent = styled.div`
   flex-direction: column;
   margin: 4px 0 0 10px;
   /* color: color(var(--midgrey) l(+10%)); */
-  color: ${lighten('0.1', colors.midgrey)};
+  color: ${colors.holoMain};
   font-size: 1.2rem;
   line-height: 1.4em;
   font-weight: 400;
@@ -238,13 +236,13 @@ const PostCardBylineContent = styled.div`
 
   a {
     /* color: color(var(--darkgrey) l(+20%)); */
-    color: ${lighten('0.2', colors.darkgrey)};
+    color: ${colors.holoMain};
     font-weight: 600;
   }
 
   @media (prefers-color-scheme: dark) {
     a {
-      color: rgba(255, 255, 255, 0.75);
+      color: ${colors.holoMain};
     }
   }
 `;

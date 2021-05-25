@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { colors } from '../styles/colors';
 
 interface WrapperProps {
   className?: string;
@@ -13,5 +14,6 @@ const StyledWrapper = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background: ${colors.holoBackground}
 `;
 

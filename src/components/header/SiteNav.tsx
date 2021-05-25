@@ -6,7 +6,7 @@ import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import { colors } from '../../styles/colors';
-import { SocialLink, SocialLinkFb } from '../../styles/shared';
+import { SocialLink, SocialLinkFb, inner } from '../../styles/shared';
 import config from '../../website-config';
 import { Facebook } from '../icons/facebook';
 import { Twitter } from '../icons/twitter';
@@ -84,10 +84,10 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
     return (
       <>
         {config.showSubscribe && <SubscribeModal ref={this.subscribe} />}
-        <nav css={SiteNavStyles}>
+        <nav css={[SiteNavStyles]}>
           <SiteNavLeft className="site-nav-left">
             {!isHome && <SiteNavLogo />}
-            <SiteNavContent css={[this.state.showTitle ? HideNav : '']}>
+            <SiteNavContent css={[inner, this.state.showTitle ? HideNav : '']}>
               <ul css={NavStyles} role="menu">
                 {/* TODO: mark current nav item - add class nav-current */}
                 <li role="menuitem">
@@ -147,7 +147,7 @@ export const SiteNavMain = css`
   left: 0;
   z-index: 1000;
   /* background: color(var(--darkgrey) l(-5%)) */
-  background: ${darken('0.05', colors.darkgrey)};
+  background: ${darken('0.15', colors.holoMain)};
 
   @media (max-width: 700px) {
     padding-right: 0;
@@ -164,6 +164,8 @@ const SiteNavStyles = css`
   overflow-y: hidden;
   height: 64px;
   font-size: 1.3rem;
+  background: ${darken(0.15, colors.holoMain)};
+  padding: 0px 20px;
 `;
 
 const SiteNavLeft = styled.div`
@@ -213,7 +215,6 @@ const NavStyles = css`
     display: block;
     padding: 12px 12px;
     color: #fff;
-    opacity: 0.8;
     transition: opacity 0.35s ease-in-out;
   }
 

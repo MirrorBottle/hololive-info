@@ -1,5 +1,5 @@
 import { Link } from 'gatsby';
-import { setLightness } from 'polished';
+import { setLightness, darken } from 'polished';
 import React from 'react';
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
@@ -33,7 +33,7 @@ export const Footer: React.FC = () => {
             </a>
           )}
           <a href="https://www.linkedin.com/in/bayu-setiawan-656357202/linkedin.com/in/bayu-setiawan-656357202/" target="_blank" rel="noopener noreferrer">
-            LinkedIn
+            Instagram
           </a>
           <a href="https://bayusetiawan.netlify.app/" target="_blank" rel="noopener noreferrer">
             My Site
@@ -50,7 +50,7 @@ const SiteFooter = css`
   padding-top: 20px;
   padding-bottom: 60px;
   color: #fff;
-  background: ${setLightness('0.0015', colors.darkgrey)};
+  background: ${darken(0.15, colors.holoMain)};
 `;
 
 const SiteFooterContent = css`

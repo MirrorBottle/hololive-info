@@ -117,6 +117,15 @@ module.exports = {
         defaultDataLayer: { platform: "gatsby" },
         routeChangeEventName: "gatsby-route-change",
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Lato`,
+        ],
+        display: 'swap',
+      },
+    },
   ],
 };

@@ -87,8 +87,8 @@ const ReadNextCardArticle = styled.article`
     color(var(--darkgrey) l(-5%))
   ); */
   background: linear-gradient(
-    ${lighten('0.02', colors.darkgrey)},
-    ${lighten('-0.05', colors.darkgrey)}
+    ${lighten('0.02', '#fff')},
+    ${lighten('-0.05', colors.holoBackground)}
   );
   border-radius: 3px;
 
@@ -115,7 +115,7 @@ const ReadNextCardArticle = styled.article`
 
 const ReadNextCardHeaderTitle = styled.h3`
   margin: 0;
-  color: rgba(255, 255, 255, 0.6);
+  color: ${colors.holoBlack};
   font-size: 1.2rem;
   line-height: 1em;
   font-weight: 300;
@@ -123,7 +123,7 @@ const ReadNextCardHeaderTitle = styled.h3`
   text-transform: uppercase;
 
   a {
-    color: #fff;
+    color: ${colors.holoMain};
     font-weight: 500;
     text-decoration: none;
     opacity: 0.8;
@@ -168,7 +168,7 @@ const ReadNextCardContent = styled.div`
 
   li a {
     display: block;
-    color: #fff;
+    color: ${colors.holoBlack};
     opacity: 0.8;
   }
 
@@ -185,7 +185,7 @@ const ReadNextCardMeta = styled.div`
 
   p {
     margin: 0;
-    color: rgba(255, 255, 255, 0.6);
+    color: ${colors.holoBlack};
   }
 `;
 
@@ -195,8 +195,8 @@ const ReadNextCardFooter = styled.footer`
 
   a {
     padding: 7px 12px 8px 14px;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid ${colors.holoMain};
+    color: ${colors.holoMain};
     font-size: 1.3rem;
     border-radius: 999px;
     transition: all 0.35s ease-in-out;
@@ -204,8 +204,8 @@ const ReadNextCardFooter = styled.footer`
 
   a:hover {
     /* border-color: var(--yellow); */
-    border-color: ${colors.yellow};
-    color: ${colors.yellow};
+    border-color: ${colors.holoBlue};
+    color: ${colors.holoBlue};
     text-decoration: none;
   }
 `;
