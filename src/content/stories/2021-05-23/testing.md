@@ -1,11 +1,7 @@
 ---
 title: 'Penjaga Gawang'
 author: [Fadhil Dhanendra]
-<<<<<<< HEAD
-tags: ['Slice of Life' , 'Tokino Sora']
-=======
-tags: ['Slice of Life', 'Gore', 'Romance', 'Thriller', 'Tragedy']
->>>>>>> b23863d00218fecefe8f15a3372438405c877162
+tags: ['Slice of Life' , 'Tokino Sora', 'Nakiri Ayame']
 image: ../../img/stories/penjaga-toko.jpg
 date: '2021-05-23'
 imageBy: 'Álvaro Serrano on Unsplash'

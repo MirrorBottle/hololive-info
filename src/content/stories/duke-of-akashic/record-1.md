@@ -6,7 +6,7 @@ image: ../../img/stories/duke-of-akashic/duke-of-akashic-one.jpg
 date: '2020-12-14'
 imageBy: 'Joshua Fuller on Unpslash'
 imageLink: 'https://unsplash.com/photos/p8w7krXVY1k?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink'
-draft: false
+draft: true
 ---
 “Ah, ternyata kamu yang menyapaku, Syhre.”
 

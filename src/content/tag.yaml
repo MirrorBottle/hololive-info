@@ -44,8 +44,9 @@
   description: Terkadang, aku ingin menulis sesuatu yang berbeda.
   image: img/tags/blog.jpg
 - id: Nakiri Ayame
-  description: Terkadang, aku ingin menulis sesuatu yang berbeda.
-  image: img/tags/blog.jpg
+  description: Ningen-sama tachi! Konnakiri~
+  image: img/tags/default.png
+  member: img/members/nakiri-ayame.jpg
 - id: Yuzuki Choco
   description: Terkadang, aku ingin menulis sesuatu yang berbeda.
   image: img/tags/blog.jpg

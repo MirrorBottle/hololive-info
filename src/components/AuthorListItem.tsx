@@ -225,7 +225,7 @@ const AuthorAvatar = css`
   margin: 0 -4px;
   width: 40px;
   height: 40px;
-  border: #fff 2px solid;
+  border: ${colors.holoMain} 2px solid;
   border-radius: 100%;
   transition: all 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99) 700ms;
 
@@ -236,6 +236,6 @@ const AuthorAvatar = css`
 
   @media (prefers-color-scheme: dark) {
     /* border-color: color(var(--darkgrey) l(+2%)); */
-    border-color: ${lighten('0.02', colors.darkgrey)};
+    border-color: ${colors.holoMain};
   }
 `;

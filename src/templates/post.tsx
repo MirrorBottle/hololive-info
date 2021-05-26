@@ -346,6 +346,22 @@ const PostFullTags = styled.section`
       color: ${colors.holoMain};
     }
   }
+  @media (max-width: 1170px) {
+    padding: 0 11vw;
+  }
+  @media (max-width: 800px) {
+    padding: 0 5vw;
+    font-size: 1.8rem;
+  }
+  @media (max-width: 500px) {
+    padding: 0;
+  }
+  @media (max-width: 500px) {
+    .post-full-custom-excerpt {
+      font-size: 1.9rem;
+      line-height: 1.5em;
+    }
+  }
 `;
 
 const PostFullCustomExcerpt = styled.p`
