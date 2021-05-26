@@ -55,7 +55,7 @@ const config: WebsiteConfig = {
   logo: 'img/ghost-logo.png',
   lang: 'ed',
   siteUrl: 'https://hololive-info.netlify.app',
-  facebook: 'https://www.facebook.com/MirrorBottle',
+  facebook: 'https://www.facebook.com/Fadhil.Dhanendra',
   twitter: 'https://twitter.com/FadhilDhanendra',
   showSubscribe: false,
   mailchimpAction: 'https://twitter.us19.list-manage.com/subscribe/post?u=a89b6987ac248c81b0b7f3a0f&amp;id=7d777b7d75',

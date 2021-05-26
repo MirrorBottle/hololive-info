@@ -1,7 +1,7 @@
 ---
 title: 'Penjaga Gawang'
 author: [Fadhil Dhanendra]
-tags: ['Slice of Life']
+tags: ['Slice of Life' , 'Tokino Sora']
 image: ../../img/stories/penjaga-toko.jpg
 date: '2021-05-23'
 imageBy: 'Álvaro Serrano on Unsplash'

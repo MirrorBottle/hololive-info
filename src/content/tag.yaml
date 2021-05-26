@@ -1,24 +1,120 @@
-- id: speeches
-  description: Some of the greatest words ever spoken.
+- id: Tokino Sora
+  description: Bagaimana kabar kalian! Dia adalah Tokino Sora! Memulai debutnya pada 7 September 2017, dia adalah Idola Virtual pertama dari Produksi Hololive. Dia suka menyanyi dan game horor, dan sejak dulu mimpinya adalah "mengadakan konser live di Yokohama Arena". Dia melakukan debut utamanya di Victor Entertainment pada Maret 2019. Dalam perjalanannya menjadi idola profesional, dia memainkan peran dalam acara TV "Watanuki-san Chi" sambil juga menjalankan podcast yang dikenal sebagai "SoraAoto!" Dia juga berperan aktif dalam genre lain. Pada 6 Oktober 2019, dia mengadakan konser live sendiri "Dream!".
   image: img/speeches-cover.jpg
-- id: romance
+- id: Roboco
   depscription: Dalam kehidupan, kau butuh apa yang disebut sebagia "cinta" sesekali.
   image: img/tags/romance.jpg
-- id: gore
+- id: Sakura Miko
   description: Terdapat merahnya darah dalam tubuh manusia, begitu pula dalam tulisan ini
   image: img/tags/gore.jpg
-- id: changed pov
+- id: Hoshimachi Suisei
   description: Jangan hanya percaya dengan sudut pandangmu seorang, lihatlah dari sisi lawanmu.
   image: img/tags/changed-pov.jpg
 - id: horror
   description: Walau tidak terlihat, kau dapat merasakan keberadaan sosoknya di balik kegelapan malam.
   image: img/tags/horror.jpg
-- id: slice of life
+- id: AZKi
   description: Tulislah pengalaman, kemudian bacalah di masa tuamu, buku perjalanan hidupmu.
   image: img/tags/slice-of-life.jpg
-- id: psychological
+- id: hololive 0th Generation
   description: Di balik gumpalan daging milikmu, terdapat jiwa yang rapuh. Berhati-hatilah.
   image: img/tags/deppresed.jpg
-- id: blog
+- id: Yozora Mel
   description: Terkadang, aku ingin menulis sesuatu yang berbeda.
   image: img/tags/blog.jpg
+- id: Shirakami Fubuki
+  description: Terkadang, aku ingin menulis sesuatu yang berbeda.
+  image: img/tags/blog.jpg
+- id: Natsuiro Matsuri
+  description: Terkadang, aku ingin menulis sesuatu yang berbeda.
+  image: img/tags/blog.jpg
+- id: Aki Rosenthal
+  description: Terkadang, aku ingin menulis sesuatu yang berbeda.
+  image: img/tags/blog.jpg
+- id: Akai Haato
+  description: Terkadang, aku ingin menulis sesuatu yang berbeda.
+  image: img/tags/blog.jpg
+- id: hololive 1st Generation
+  description: Terkadang, aku ingin menulis sesuatu yang berbeda.
+  image: img/tags/blog.jpg
+- id: Minato Aqua
+  description: Terkadang, aku ingin menulis sesuatu yang berbeda.
+  image: img/tags/blog.jpg
+- id: Murasaki Shion
+  description: Terkadang, aku ingin menulis sesuatu yang berbeda.
+  image: img/tags/blog.jpg
+- id: Nakiri Ayame
+  description: Terkadang, aku ingin menulis sesuatu yang berbeda.
+  image: img/tags/blog.jpg
+- id: Yuzuki Choco
+  description: Terkadang, aku ingin menulis sesuatu yang berbeda.
+  image: img/tags/blog.jpg
+- id: Oozora Subaru
+  description: Terkadang, aku ingin menulis sesuatu yang berbeda.
+  image: img/tags/blog.jpg
+- id: hololive 2nd Generation
+  description: Terkadang, aku ingin menulis sesuatu yang berbeda.
+  image: img/tags/blog.jpg
+- id: Ookami Mio
+  description: Terkadang, aku ingin menulis sesuatu yang berbeda.
+  image: img/tags/blog.jpg
+- id: Nekomata Okayu
+  description: Terkadang, aku ingin menulis sesuatu yang berbeda.
+  image: img/tags/blog.jpg
+- id: Inugami Korone
+  description: Terkadang, aku ingin menulis sesuatu yang berbeda.
+  image: img/tags/blog.jpg
+- id: hololive Gamers
+  description: Terkadang, aku ingin menulis sesuatu yang berbeda.
+  image: img/tags/blog.jpg
+- id: Usada Pekora
+  description: Terkadang, aku ingin menulis sesuatu yang berbeda.
+  image: img/tags/blog.jpg
+- id: Uruha Rushia
+  description: Terkadang, aku ingin menulis sesuatu yang berbeda.
+  image: img/tags/blog.jpg
+- id: Shiranui Flare
+  description: Terkadang, aku ingin menulis sesuatu yang berbeda.
+  image: img/tags/blog.jpg
+- id: Shirogane Noel
+  description: Terkadang, aku ingin menulis sesuatu yang berbeda.
+  image: img/tags/blog.jpg
+- id: Houshou Marine
+  description: Terkadang, aku ingin menulis sesuatu yang berbeda.
+  image: img/tags/blog.jpg
+- id: hololive 3rd Generation
+  description: Terkadang, aku ingin menulis sesuatu yang berbeda.
+  image: img/tags/blog.jpg
+- id: Amane Kanata
+  description: Terkadang, aku ingin menulis sesuatu yang berbeda.
+  image: img/tags/blog.jpg
+- id: Kiryu Coco
+  description: Terkadang, aku ingin menulis sesuatu yang berbeda.
+  image: img/tags/blog.jpg
+- id: Tsunomaki Watame
+  description: Terkadang, aku ingin menulis sesuatu yang berbeda.
+  image: img/tags/blog.jpg
+- id: Tokoyami Towa
+  description: Terkadang, aku ingin menulis sesuatu yang berbeda.
+  image: img/tags/blog.jpg
+- id: Himemori Luna
+  description: Terkadang, aku ingin menulis sesuatu yang berbeda.
+  image: img/tags/blog.jpg
+- id: hololive 4th Generation
+  description: Terkadang, aku ingin menulis sesuatu yang berbeda.
+  image: img/tags/blog.jpg
+- id: Yukihana Lamy
+  description: Terkadang, aku ingin menulis sesuatu yang berbeda.
+  image: img/tags/blog.jpg
+- id: Shiranui Flare
+  description: Terkadang, aku ingin menulis sesuatu yang berbeda.
+  image: img/tags/blog.jpg
+- id: Momosuzu Nene
+  description: Terkadang, aku ingin menulis sesuatu yang berbeda.
+  image: img/tags/blog.jpg
+- id: Shishiro Botan
+  description: Terkadang, aku ingin menulis sesuatu yang berbeda.
+  image: img/tags/blog.jpg
+- id: hololive 5th Generation
+  description: Bagaimana kabar kalian! Dia adalah Tokino Sora! Memulai debutnya pada 7 September 2017, dia adalah Idola Virtual pertama dari Produksi Hololive. Dia suka menyanyi dan game horor, dan sejak dulu mimpinya adalah "mengadakan konser live di Yokohama Arena". Dia melakukan debut utamanya di Victor Entertainment pada Maret 2019. Dalam perjalanannya menjadi idola profesional, dia memainkan peran dalam acara TV "Watanuki-san Chi" sambil juga menjalankan podcast yang dikenal sebagai "SoraAoto!" Dia juga berperan aktif dalam genre lain. Pada 6 Oktober 2019, dia mengadakan konser live sendiri "Dream!".
+  image: img/speeches-cover.jpg
