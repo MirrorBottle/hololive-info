@@ -194,13 +194,6 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
             {/* TODO: no-image css tag? */}
             <article css={[PostFull, !post.frontmatter.image && NoImage]}>
               <PostFullHeader className="post-full-header">
-                <PostFullTags className="post-full-tags">
-                  {post.frontmatter.tags && post.frontmatter.tags.length > 0 && post.frontmatter.tags.map(tag => (
-                    <Link style={{ color: colors.holoMain }} to={`/tags/${_.kebabCase(tag)}/`}>
-                      #{tag}&nbsp;
-                    </Link>
-                  ))}
-                </PostFullTags>
                 <PostFullTitle className="post-full-title">{post.frontmatter.title}</PostFullTitle>
                 <PostFullCustomExcerpt className="post-full-custom-excerpt">
                   {post.frontmatter.excerpt}
@@ -250,7 +243,13 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
 
               {/* The big email subscribe modal content */}
               {config.showSubscribe && <Subscribe title={config.title} />}
-
+              <PostFullTags className="post-full-tags">
+                {post.frontmatter.tags && post.frontmatter.tags.length > 0 && post.frontmatter.tags.map(tag => (
+                  <Link to={`/tags/${_.kebabCase(tag)}/`}>
+                    {tag}&nbsp;
+                  </Link>
+                ))}
+              </PostFullTags>
               <DiscussionEmbed {...disqusConfig} />
             </article>
           </div>
@@ -326,10 +325,27 @@ const PostFullTags = styled.section`
   justify-content: flex-start;
   align-items: center;
   /* color: var(--midgrey); */
-  color: ${colors.holoMain};
+  color: #fff;
   font-size: 1.7rem;
   line-height: 1.4em;
   font-weight: 600;
+  flex-wrap: wrap;
+  padding: 0 170px 6vw;
+  a {
+    background: ${colors.holoMain};
+    padding: 5px 12px;
+    border-radius: 999px;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 5px;
+    margin-top: 2px;
+    transition: .2s;
+    border: 2px solid ${colors.holoMain};
+    &:hover {
+      background: ${colors.holoBackground};
+      color: ${colors.holoMain};
+    }
+  }
 `;
 
 const PostFullCustomExcerpt = styled.p`

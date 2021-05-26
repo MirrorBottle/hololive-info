@@ -95,8 +95,6 @@ const IndexPage: React.FC<IndexProps> = props => {
       </Helmet>
       <Wrapper>
         <div
-          css={[SiteHeader, SiteHeaderStyles]}
-          className="site-header-background"
           style={{
             backgroundImage: `url('${props.data.header.childImageSharp.fixed.src}')`,
           }}
