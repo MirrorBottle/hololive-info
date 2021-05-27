@@ -4,7 +4,7 @@ author: [Fadhil Dhanendra]
 <<<<<<< HEAD
 tags: ['Slice of Life' , 'Tokino Sora']
 =======
-tags: ['Slice of Life', 'Gore', 'Romance', 'Thriller', 'Tragedy']
+tags: ['Slice of Life', 'Gore', 'Romance', 'Thriller', 'Tragedy' , 'Tokino Sora']
 >>>>>>> b23863d00218fecefe8f15a3372438405c877162
 image: ../../img/stories/penjaga-toko.jpg
 date: '2021-05-23'
