@@ -10,9 +10,6 @@
 - id: Hoshimachi Suisei
   description: Jangan hanya percaya dengan sudut pandangmu seorang, lihatlah dari sisi lawanmu.
   image: img/tags/changed-pov.jpg
-- id: horror
-  description: Walau tidak terlihat, kau dapat merasakan keberadaan sosoknya di balik kegelapan malam.
-  image: img/tags/horror.jpg
 - id: AZKi
   description: Tulislah pengalaman, kemudian bacalah di masa tuamu, buku perjalanan hidupmu.
   image: img/tags/slice-of-life.jpg
@@ -119,3 +116,7 @@
 - id: hololive 5th Generation
   description: Bagaimana kabar kalian! Dia adalah Tokino Sora! Memulai debutnya pada 7 September 2017, dia adalah Idola Virtual pertama dari Produksi Hololive. Dia suka menyanyi dan game horor, dan sejak dulu mimpinya adalah "mengadakan konser live di Yokohama Arena". Dia melakukan debut utamanya di Victor Entertainment pada Maret 2019. Dalam perjalanannya menjadi idola profesional, dia memainkan peran dalam acara TV "Watanuki-san Chi" sambil juga menjalankan podcast yang dikenal sebagai "SoraAoto!" Dia juga berperan aktif dalam genre lain. Pada 6 Oktober 2019, dia mengadakan konser live sendiri "Dream!".
   image: img/speeches-cover.jpg
+- id: Pavolia Reine
+  description: Perhatian! Sang putri merak yang tertiup angin, aku Pavolia Reine dari holoID!
+  image: img/tags/default.png
+  member: img/members/pavolia-reine.jpg
