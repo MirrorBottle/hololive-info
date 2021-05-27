@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 import { FluidObject } from 'gatsby-image';
-
+import { css } from '@emotion/react';
 import { Footer } from '../components/Footer';
 import SiteNav from '../components/header/SiteNav';
 import { PostCard } from '../components/PostCard';
@@ -11,15 +11,16 @@ import {
   inner,
   outer,
   PostFeed,
-  SiteDescription,
   SiteHeader,
   SiteHeaderContent,
+  AuthorProfileImage,
   SiteMain,
   SiteTitle,
   SiteNavMain,
   SiteArchiveHeader,
   ResponsiveHeaderBackground,
   SiteHeaderBackground,
+  TagDescription,
 } from '../styles/shared';
 import { PageContext } from './post';
 import { Helmet } from 'react-helmet';
@@ -37,6 +38,11 @@ interface TagTemplateProps {
           id: string;
           description: string;
           image?: {
+            childImageSharp: {
+              fluid: FluidObject;
+            };
+          };
+          member?: {
             childImageSharp: {
               fluid: FluidObject;
             };
@@ -99,18 +105,27 @@ const Tags = ({ pageContext, data, location }: TagTemplateProps) => {
             className="site-header-background"
           >
             <SiteHeaderContent css={inner} className="site-header-content">
-              <SiteTitle className="site-title">{tag}</SiteTitle>
-              <SiteDescription className="site-description">
-                {tagData?.node.description ? (
-                  tagData.node.description
-                ) : (
-                  <>
-                    A collection of {totalCount > 1 && `${totalCount} posts`}
-                    {totalCount === 1 && '1 post'}
-                    {totalCount === 0 && 'No posts'}
-                  </>
-                )}
-              </SiteDescription>
+              <div css={TagContainer}>
+                <img
+                  style={{ marginTop: '8px' }}
+                  css={[AuthorProfileImage, AuthorProfileBioImage]}
+                  src={tagData?.node?.member?.childImageSharp?.fluid?.src}
+                />
+                <div css={TagContent}>
+                  <SiteTitle className="site-title">{tag}</SiteTitle>
+                  <TagDescription className="site-description">
+                    {tagData?.node.description ? (
+                      tagData.node.description
+                    ) : (
+                      <>
+                        A collection of {totalCount > 1 && `${totalCount} posts`}
+                        {totalCount === 1 && '1 post'}
+                        {totalCount === 0 && 'No posts'}
+                      </>
+                    )}
+                  </TagDescription>
+                </div>
+              </div>
             </SiteHeaderContent>
           </ResponsiveHeaderBackground>
         </header>
@@ -139,6 +154,13 @@ export const pageQuery = graphql`
           id
           description
           image {
+            childImageSharp {
+              fluid(maxWidth: 3720) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          member {
             childImageSharp {
               fluid(maxWidth: 3720) {
                 ...GatsbyImageSharpFluid
@@ -193,3 +215,25 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+const AuthorProfileBioImage = css`
+  z-index: 10;
+  flex-shrink: 0;
+  margin: -4px 0 0;
+  width: 110px;
+  height: 110px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0 0 0 6px;
+  border-radius: 100%;
+`;
+
+const TagContainer = css`
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+const TagContent = css`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+`

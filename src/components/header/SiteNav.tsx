@@ -87,7 +87,7 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
         <nav css={[SiteNavStyles]}>
           <SiteNavLeft className="site-nav-left">
             {!isHome && <SiteNavLogo />}
-            <SiteNavContent css={[inner, this.state.showTitle ? HideNav : '']}>
+            <SiteNavContent css={[inner]}>
               <ul css={NavStyles} role="menu">
                 {/* TODO: mark current nav item - add class nav-current */}
                 <li role="menuitem">
@@ -97,11 +97,6 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
                   <Link to="/about">About</Link>
                 </li>
               </ul>
-              {isPost && (
-                <NavPostTitle ref={this.titleRef} className="nav-post-title">
-                  {post.title}
-                </NavPostTitle>
-              )}
             </SiteNavContent>
           </SiteNavLeft>
           <SiteNavRight>

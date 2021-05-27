@@ -61,6 +61,19 @@ export const SiteDescription = styled.h2`
   }
 `;
 
+export const TagDescription = styled.h2`
+  z-index: 10;
+  margin: 0;
+  padding: 5px 0;
+  font-size: 2.1rem;
+  line-height: 1.4em;
+  font-weight: 400;
+  text-align:left;
+  @media (max-width: 500px) {
+    font-size: 1.8rem;
+  }
+`
+
 export const Posts = css`
   overflow-x: hidden;
 `;
